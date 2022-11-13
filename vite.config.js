@@ -16,7 +16,7 @@ export default defineConfig({
       {
         ejs: {
           // set views path to support partials
-          views: [__dirname],
+          views: [__dirname + '/partials'],
         },
       }
     ),
