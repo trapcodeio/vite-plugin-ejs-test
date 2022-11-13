@@ -7,18 +7,10 @@ export default defineConfig({
   plugins: [
     vue(),
 
-    ViteEjsPlugin(
-      () => {
-        return {
-          title: 'My vue project!',
-        };
-      },
-      {
-        ejs: {
-          // set views path to support partials
-          views: [__dirname + '/partials'],
-        },
-      }
-    ),
+    ViteEjsPlugin(() => {
+      return {
+        title: 'My vue project!',
+      };
+    }),
   ],
 });
